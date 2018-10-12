@@ -1,0 +1,50 @@
+!! Scrolling
+
+URxvt*saveLines:          8192
+URxvt*scrollBar:          false
+
+URxvt*scrollstyle:        plain
+URxvt*scrollBar_right:    true
+URxvt*scrollBar_floating: true
+
+URxvt*scrollTtyOutput:    false
+URxvt*scrollWithBuffer:   true
+URxvt*scrollTtyKeypress:  true
+
+!! Fonts
+
+Xft.hintstyle: hintfull
+Xft.autohint:  true
+Xft.hinting:   true
+Xft.antialias: true
+Xft.rgba:      rgb
+Xft.lcdfilter: lcddefault
+Xft.dpi:       96
+
+URxvt*font:           xft:Source Code Pro:style=Regular:pixelsize=12,\
+                      xft:DejaVu Sans Mono:style=Book:pixelsize=12
+URxvt*boldFont:       xft:Source Code Pro:style=Bold:pixelsize=12,\
+                      xft:DejaVu Sans Mono:style=Bold:pixelsize=12
+URxvt*italicFont:     xft:Source Code Pro:style=Italic:pixelsize=12,\
+                      xft:DejaVu Sans Mono:style=Oblique:pixelsize=12
+URxvt*boldItalicFont: xft:Source Code Pro:style=Bold,Italic:pixelsize=12,\
+                      xft:DejaVu Sans Mono:style=Bold Oblique:pixelsize=12
+URxvt*imfont:         xft:Source Code Pro:style=Regular:pixelsize=12,\
+                      xft:DejaVu Sans Mono:style=Book:pixelsize=12
+URxvt*letterSpace:    -1
+
+!! Other
+
+URxvt*depth: 32
+URxvt*perl-ext-common:        default,clipboard,keyboard-select
+URxvt*clipboard.copycmd:      xclip -i -selection clipboard
+URxvt*clipboard.pastecmd:     xclip -o -selection clipboard
+URxvt*keysym.M-Escape:        perl:keyboard-select:activate
+
+URxvt*keysym.M-c:             perl:clipboard:copy
+URxvt*keysym.M-v:             perl:clipboard:paste
+
+!URxvt*url-select.launcher:   firefox
+!URxvt*url-select.underline:  true
+!URxvt*searchable-scrollback: M-f
+

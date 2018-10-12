@@ -1,0 +1,26 @@
+# Dotfile whitelist
+# First ignore everything but .gitignore
+*
+!.gitignore
+
+# Reinclude directories
+!.emacs.d
+.emacs.d/*
+!.xmonad
+.xmonad/*
+!.Xresources.d
+.Xresources.d/*
+
+# Emacs
+!.emacs.d/init.el
+
+# Xmonad
+!.xmonad/xmonad.hs
+
+# Xorg
+!.xinitrc
+!.Xresources
+!.Xresources.d/urxvt
+
+# Zsh
+!.zshrc
