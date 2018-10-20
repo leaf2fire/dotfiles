@@ -1,2 +1,2 @@
-#include ".Xresources.d/colors/solarized-dark"
+#include ".Xresources.d/colors/base16-xresources/xresources/base16-monokai.Xresources"
 #include ".Xresources.d/urxvt"

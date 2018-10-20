@@ -14,8 +14,8 @@ compinit
 # autoload -Uz promptinit
 # promptinit
 
-alias ls='ls -A --color=auto'
-
-# Make gems easier to use
-PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
-export GEM_HOME=$HOME/.gem
+# There's pattern here. Can it be abstracted?
+alias ls='ls --color=auto'
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+alias stack='stack --color=auto'

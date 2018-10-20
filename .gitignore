@@ -10,9 +10,22 @@
 .xmonad/*
 !.Xresources.d
 .Xresources.d/*
+!.Xresources.d/colors
+.Xresources.d/colors/*
+!.Xresources.d/fonts
+.Xresources.d/fonts/*
+
+!README.md
 
 # Emacs
 !.emacs.d/init.el
+!.emacs.d/config
+!.emacs.d/config/package-config.el
+!.emacs.d/config/ui-config.el
+!.emacs.d/config/other-config.el
+!.emacs.d/config/theme-config.el
+!.emacs.d/config/modes
+!.emacs.d/config/modes/web-mode-config.el
 
 # Xmonad
 !.xmonad/xmonad.hs
@@ -21,6 +34,8 @@
 !.xinitrc
 !.Xresources
 !.Xresources.d/urxvt
+!.Xresources.d/colors/README.md
+!.Xresources.d/fonts/README.md
 
 # Zsh
 !.zshrc
